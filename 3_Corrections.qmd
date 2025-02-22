@@ -1,0 +1,41 @@
+# Corrections
+
+## Summary
+
+The lecture was divided into two parts: types of corrections and image enhancements, and data joining, which are generally required for raw satellite imagery. Different types of corrections are necessary depending on the satellite imagery and the analysis being conducted. There are various reasons why these corrections are required, including the reflection of sunlight, accounting for Earth’s curvature and rotation, and sensor movement. These corrections can be categorized into four main types:
+
+1.  **Geometric Corrections** – These are required to fix distortions that occur due to Earth's rotation, sensor angles, and other positional inaccuracies. Methods to address these include Ground Control Points (GCPs), resampling of rasters, and regression techniques.
+
+2.  **Atmospheric Corrections** – The atmosphere can cause image faults due to absorption and scattering, leading to discoloration or filter-like distortions. These corrections help in improving the radiometric fidelity of images.
+
+3.  **Orthorectification** – When a sensor captures an image at an angle, especially in varying topographies, distortions occur. Orthorectification corrects these errors to ensure uniform representation of surface features.
+
+4.  **Radiometric Corrections** – Sometimes, the radiometric resolution of a pixel does not match real-world surface values due to scattering and absorption of light or variations in sunlight intensity. These corrections help in normalizing brightness and contrast levels.
+
+The second part of the lecture focused on data joining and enhancements. Since satellite imagery is usually divided into smaller tiles, a Point of Interest (POI) may require multiple images, necessitating the process of mosaicking—combining multiple images into a seamless dataset. An important aspect of mosaicking is ensuring uniform brightness across images to avoid noticeable seams. Enhancements are optional and depend on the specific analysis needs; they are primarily used to improve visual clarity and feature detection.
+
+While raw satellite imagery requires corrections, data joining, and enhancements, modern satellites like Sentinel and Landsat provide Analysis Ready Data (ARD), which is preprocessed to include necessary corrections. However, not all analyses require the same level of processing, making it crucial to understand and verify the changes applied to ARD before usage.
+
+## Application
+
+An example of preprocessing corrections applied to satellite imagery is in flood mapping using Sentinel-1 SAR data. Synthetic Aperture Radar (SAR) data undergoes multiple preprocessing steps, including applying orbit files, thermal noise removal, radiometric calibration, speckle noise reduction (despeckling), terrain correction, and conversion to dB values. For flood mapping, VH polarization is preferred over VV polarization as it provides better detection of water surfaces due to its reduced signal attenuation, enhanced backscatter, and improved sensitivity to water surface roughness. These preprocessing steps help create more accurate flood extent maps.
+
+<div style="text-align: center;">
+  <img src="Files/Before and After correction.png" width="500px">
+</div>
+Top - SAR Data before corrections, Bottom - SAR Data after corrections.
+
+
+## Reflection
+
+This week's lecture highlighted the different types of corrections and processing which can be done to the satellite imagery. Although it majorly depends on the type of analysis which is being done, we should still be aware of these different types. Majority of the open data satellite imagery have ARD which is useful and can save a lot of time, one of the major websites which hosts these data is the Google Earth Engine Catalogue. I feel like mosaicking is one of the most important one for this lecture, as it is very unlikely that we will find the POI in just one satellite imagery, so multiple imageries must be used and joining them seamlessly is very important. In mosaicking, consistency between different images is crucial. I was surprised to that in majority of the corrections, regressions was used. 
+
+Lastly, I feel like even though we can automate all the corrections to the satellite imagery, manual tweaking is still needed for visual enhancements to improve the analysis and also get more accurate results.
+
+## References
+
+- National Remote Sensing Centre (NRSC). (n.d.). Chapter 12: Flood Disaster Management. 
+Retrieved from https://www.nrsc.gov.in/sites/default/files/pdf/ebooks/Chap_12_FloodDisasterManagement_p1.pdf
+- Debraj Deka, 2023, Geospatial Analysis of Critical Infrastructure Resilience in Flood-Prone Areas: Case of Kamrup Region, Assam
+
+

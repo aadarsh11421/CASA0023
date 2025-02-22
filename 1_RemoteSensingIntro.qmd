@@ -1,0 +1,13 @@
+# Getting Started with Remote Sensing
+
+## Summary
+
+First, the applications of remote sensing were discussed, highlighting its use in land use/land cover (LULC) data, climate studies, oceanic studies, etc. We also examined which satellites are mainly used for these applications. Remote sensing utilizes two types of sensors: active and passive. Active sensors do not require an external light source, while passive sensors rely on external sources like the sun to capture reflected light. Additionally, we explored three types of atmospheric corrections commonly referenced in research papers: Rayleigh (particles smaller than the wavelength of light), Mie (particles comparable in size to the wavelength), and Non-Selective (particles larger than the wavelength). Understanding these corrections is crucial for preprocessing satellite data. Furthermore, four types of resolution must be considered when working with remote sensing data: spatial (raster size), spectral (type and number of bands), temporal (time period), and radiometric (range of possible values, e.g., 8-bit or 16-bit sensor). In the practical session, we worked with SNAP, a software application used for loading satellite imagery, performing image processing, and applying corrections.
+
+## Application
+
+Remote sensing is widely used in urban planning and environmental studies. One of the simplest applications is studying the evolution of an area over time using Google Earth, which helps analyze how the built environment grows or changes. We have also used digital elevation models (DEMs) to calculate slope and elevation, which are critical for urban planning and regulatory decisions. For instance, planning laws often restrict construction in areas with steep slopes. Additionally, DEMs help create drainage patterns, aiding in their identification and protection. Remote sensing data is also valuable in pollution studies; Sentinel-5P’s TROPOMI sensor can detect various pollutants. Another important application is flood monitoring using SAR data, as SAR can penetrate cloud cover, making it ideal for flood analysis in heavily clouded conditions.
+
+## Reflection
+
+I believe remote sensing data should be used to update planning laws. In my experience, many planning regulations in different Indian states are outdated. For example, remote sensing can help keep these laws current by automatically generating updated landslide hazard maps and other critical datasets like rainfall, annually. This would enhance disaster preparedness and allow planners to make more informed decisions. The potential for integrating remote sensing with automated systems is promising, and I look forward to exploring how this technology can be applied more effectively in urban planning and policy-making.
