@@ -1,0 +1,93 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Learning Diary",
+    "section": "",
+    "text": "Welcome\nHello, this is my learning diary for the Term 2 module Remotely Sensing Cities and Environments. This comprises of the weekly understanding of the classwork and materials.\nI did my Bachelors in Physical Planning from School of Planning and Architecture, Delhi, India. I have some experience in Remote Sensing, but from this module I would like to get to know the basics and the technicalities of Remote Sensing like corrections and learn Google Earth Engine (GEE)."
+  },
+  {
+    "objectID": "1_RemoteSensingIntro.html#summary",
+    "href": "1_RemoteSensingIntro.html#summary",
+    "title": "1  Getting Started with Remote Sensing",
+    "section": "1.1 Summary",
+    "text": "1.1 Summary\nFirst, the applications of remote sensing were discussed, highlighting its use in land use/land cover (LULC) data, climate studies, oceanic studies, etc. We also examined which satellites are mainly used for these applications. Remote sensing utilizes two types of sensors: active and passive. Active sensors do not require an external light source, while passive sensors rely on external sources like the sun to capture reflected light. Additionally, we explored three types of atmospheric corrections commonly referenced in research papers: Rayleigh (particles smaller than the wavelength of light), Mie (particles comparable in size to the wavelength), and Non-Selective (particles larger than the wavelength). Understanding these corrections is crucial for preprocessing satellite data. Furthermore, four types of resolution must be considered when working with remote sensing data: spatial (raster size), spectral (type and number of bands), temporal (time period), and radiometric (range of possible values, e.g., 8-bit or 16-bit sensor). In the practical session, we worked with SNAP, a software application used for loading satellite imagery, performing image processing, and applying corrections."
+  },
+  {
+    "objectID": "1_RemoteSensingIntro.html#application",
+    "href": "1_RemoteSensingIntro.html#application",
+    "title": "1  Getting Started with Remote Sensing",
+    "section": "1.2 Application",
+    "text": "1.2 Application\nRemote sensing is widely used in urban planning and environmental studies. One of the simplest applications is studying the evolution of an area over time using Google Earth, which helps analyze how the built environment grows or changes. We have also used digital elevation models (DEMs) to calculate slope and elevation, which are critical for urban planning and regulatory decisions. For instance, planning laws often restrict construction in areas with steep slopes. Additionally, DEMs help create drainage patterns, aiding in their identification and protection. Remote sensing data is also valuable in pollution studies; Sentinel-5P’s TROPOMI sensor can detect various pollutants. Another important application is flood monitoring using SAR data, as SAR can penetrate cloud cover, making it ideal for flood analysis in heavily clouded conditions."
+  },
+  {
+    "objectID": "1_RemoteSensingIntro.html#reflection",
+    "href": "1_RemoteSensingIntro.html#reflection",
+    "title": "1  Getting Started with Remote Sensing",
+    "section": "1.3 Reflection",
+    "text": "1.3 Reflection\nI believe remote sensing data should be used to update planning laws. In my experience, many planning regulations in different Indian states are outdated. For example, remote sensing can help keep these laws current by automatically generating updated landslide hazard maps and other critical datasets like rainfall, annually. This would enhance disaster preparedness and allow planners to make more informed decisions. The potential for integrating remote sensing with automated systems is promising, and I look forward to exploring how this technology can be applied more effectively in urban planning and policy-making."
+  },
+  {
+    "objectID": "2_Portfolio.html#xaringan-presentation-on-sentinel-5p",
+    "href": "2_Portfolio.html#xaringan-presentation-on-sentinel-5p",
+    "title": "2  Online Portfolio",
+    "section": "2.1 Xaringan Presentation on Sentinel-5P",
+    "text": "2.1 Xaringan Presentation on Sentinel-5P\nFor week 2, we were asked to prepare a presentation on any satellite."
+  },
+  {
+    "objectID": "3_Corrections.html#summary",
+    "href": "3_Corrections.html#summary",
+    "title": "3  Corrections",
+    "section": "3.1 Summary",
+    "text": "3.1 Summary\nThe lecture was divided into two parts: types of corrections and image enhancements, and data joining, which are generally required for raw satellite imagery. Different types of corrections are necessary depending on the satellite imagery and the analysis being conducted. There are various reasons why these corrections are required, including the reflection of sunlight, accounting for Earth’s curvature and rotation, and sensor movement. These corrections can be categorized into four main types:\n\nGeometric Corrections – These are required to fix distortions that occur due to Earth’s rotation, sensor angles, and other positional inaccuracies. Methods to address these include Ground Control Points (GCPs), resampling of rasters, and regression techniques.\nAtmospheric Corrections – The atmosphere can cause image faults due to absorption and scattering, leading to discoloration or filter-like distortions. These corrections help in improving the radiometric fidelity of images.\nOrthorectification – When a sensor captures an image at an angle, especially in varying topographies, distortions occur. Orthorectification corrects these errors to ensure uniform representation of surface features.\nRadiometric Corrections – Sometimes, the radiometric resolution of a pixel does not match real-world surface values due to scattering and absorption of light or variations in sunlight intensity. These corrections help in normalizing brightness and contrast levels.\n\nThe second part of the lecture focused on data joining and enhancements. Since satellite imagery is usually divided into smaller tiles, a Point of Interest (POI) may require multiple images, necessitating the process of mosaicking—combining multiple images into a seamless dataset. An important aspect of mosaicking is ensuring uniform brightness across images to avoid noticeable seams. Enhancements are optional and depend on the specific analysis needs; they are primarily used to improve visual clarity and feature detection.\nWhile raw satellite imagery requires corrections, data joining, and enhancements, modern satellites like Sentinel and Landsat provide Analysis Ready Data (ARD), which is preprocessed to include necessary corrections. However, not all analyses require the same level of processing, making it crucial to understand and verify the changes applied to ARD before usage."
+  },
+  {
+    "objectID": "3_Corrections.html#application",
+    "href": "3_Corrections.html#application",
+    "title": "3  Corrections",
+    "section": "3.2 Application",
+    "text": "3.2 Application\nAn example of preprocessing corrections applied to satellite imagery is in flood mapping using Sentinel-1 SAR data. Synthetic Aperture Radar (SAR) data undergoes multiple preprocessing steps, including applying orbit files, thermal noise removal, radiometric calibration, speckle noise reduction (despeckling), terrain correction, and conversion to dB values. For flood mapping, VH polarization is preferred over VV polarization as it provides better detection of water surfaces due to its reduced signal attenuation, enhanced backscatter, and improved sensitivity to water surface roughness. These preprocessing steps help create more accurate flood extent maps.\n\n\n\nTop - SAR Data before corrections, Bottom - SAR Data after corrections."
+  },
+  {
+    "objectID": "3_Corrections.html#reflection",
+    "href": "3_Corrections.html#reflection",
+    "title": "3  Corrections",
+    "section": "3.3 Reflection",
+    "text": "3.3 Reflection\nThis week’s lecture highlighted the different types of corrections and processing which can be done to the satellite imagery. Although it majorly depends on the type of analysis which is being done, we should still be aware of these different types. Majority of the open data satellite imagery have ARD which is useful and can save a lot of time, one of the major websites which hosts these data is the Google Earth Engine Catalogue. I feel like mosaicking is one of the most important one for this lecture, as it is very unlikely that we will find the POI in just one satellite imagery, so multiple imageries must be used and joining them seamlessly is very important. In mosaicking, consistency between different images is crucial. I was surprised to that in majority of the corrections, regressions was used.\nLastly, I feel like even though we can automate all the corrections to the satellite imagery, manual tweaking is still needed for visual enhancements to improve the analysis and also get more accurate results."
+  },
+  {
+    "objectID": "3_Corrections.html#references",
+    "href": "3_Corrections.html#references",
+    "title": "3  Corrections",
+    "section": "3.4 References",
+    "text": "3.4 References\n\nNational Remote Sensing Centre (NRSC). (n.d.). Chapter 12: Flood Disaster Management. Retrieved from https://www.nrsc.gov.in/sites/default/files/pdf/ebooks/Chap_12_FloodDisasterManagement_p1.pdf\nDebraj Deka, 2023, Geospatial Analysis of Critical Infrastructure Resilience in Flood-Prone Areas: Case of Kamrup Region, Assam"
+  },
+  {
+    "objectID": "4_Policy.html#summary",
+    "href": "4_Policy.html#summary",
+    "title": "4  Policy",
+    "section": "4.1 Summary",
+    "text": "4.1 Summary\nFor the case study city I have chosen Shimla City, Himachal Pradesh, India. This is a city with an area of 27 sqkm and a population density of 7600 person per sqkm as per the 2011 Census. The city’s draft Development Development plan is for the year 2041 and the expected population density is around 13000 person per sqkm.\nThe city lies in the Himalayan ranges and it faces a lot of landslides during the monsoon season, on top of that the population of the city is increasing uncontrollably. Although the current Development Plan talks about how the area is prone to natural disasters, there is no inclusion of disaster risk zones in the Land Suitability. The Development Control Regulations (DCRs) are same throughout the city irrespective of the terrain, slope, topography, but they do have green belt zones and restricted areas. A City Disaster Management Plan (CDMP) was created for the year 2021-22, but this hasn’t been implemented yet, despite the necessity. The development plan mentions how its important that disaster management is important, but there is no analysis regarding to disaster risk zones.\n\n\n\nA landslide affected area where several buildings were damaged after heavy rains, at Krishna Nagar ward in Shimla. (The Telegraph Online)\nThe CDMP even mentions that there is a need of landslide micro-zonation of the city which will help to guide and regulate the growth of Shimla and also help in the disaster prepardeness, but as of now there is no updated landlside micro-zonation of the city."
+  },
+  {
+    "objectID": "4_Policy.html#application",
+    "href": "4_Policy.html#application",
+    "title": "4  Policy",
+    "section": "4.2 Application",
+    "text": "4.2 Application\nThe city should prepare updated landslide micro-zonation maps using satellite data like DEM, rainfall data, lithology etc. This updated map will help the planners to regulate the growth. As of now there are many buildings in Shimla city which has higher FAR than the permissible FAR, this is not only illegal but is also dangerous as this can cause structural problems and can cause a chain effect during a landslide or earthquake.\nThe updated landslide micro-zonation map will not only help to prioritise regions which are falling under high risk, but it will also give the areas which are not under risk which is helpful as then the city can propose emergency disaster shelters in the areas with the lowest risk. This is essential as there are no planned/dedicated emergency shelters in the city.\nSatellite Imagery can also be used to identify the natural drainage pattern of the city and to make sure that these are protected and are not exploited. Blockage of these natural drains will increase the chances of landslide as water will seep into the soil which will decrease the structural integrity of the soil. Any construction on these drains are also dangerous and by identifying them, authorities can make sure that the regions near natural drains are not exploited."
+  },
+  {
+    "objectID": "4_Policy.html#reflection",
+    "href": "4_Policy.html#reflection",
+    "title": "4  Policy",
+    "section": "4.3 Reflection",
+    "text": "4.3 Reflection\nShimla City being a tourist city and famous for its high schools, the city is undergoing an uncontrolled increase of population. With this change and city being almost at its maximum capacity, the authorities should make sure that disaster management should be a top priority. They should make sure that they are prepared for these disasters and human lives and infrastructure are not lost. Remote Sensing can aid the planning and disaster management process. Rather than figuring out what to after a disaster, the use of technology can help to be prepared for this. This will also help in the urban planning of the city as implenting strict DCRs and planning laws will help the city to grow in a controlled manner."
+  },
+  {
+    "objectID": "4_Policy.html#references",
+    "href": "4_Policy.html#references",
+    "title": "4  Policy",
+    "section": "4.4 References",
+    "text": "4.4 References\n\nKumar, A. & Pushplata (2015) ‘City profile: Shimla’, Cities, 49, pp. 149–158. Available at: https://doi.org/10.1016/j.cities.2015.08.006\nKumar, A. (2016) ‘Impact of building regulations on Indian hill towns’, HBRC Journal, 12(3), pp. 316–326. Available at: https://doi.org/10.1016/j.hbrcj.2015.02.002\nGovernment of Himachal Pradesh (2020-21) City Disaster Management Plan Shimla. Shimla: Government of Himachal Pradesh.\nTown and Country Planning Department, Himachal Pradesh (2021) Draft Development Plan Shimla Planning Area 2041. Shimla: Government of Himachal Pradesh.\nDistrict Disaster Management Authority, Shimla (2017) Shimla District Disaster Management Plan 2017. Shimla: Government of Himachal Pradesh."
+  }
+]
