@@ -18,8 +18,8 @@ bibliography: references.bib
 format:
   html:
     theme:
-      light: materia
-      dark: solar
+      light: solar
+      dark: materia
   pdf:
     documentclass: scrreprt
 
