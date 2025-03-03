@@ -1,21 +1,21 @@
 # Policy
 
 ## Summary
+
 For the case study city I have chosen Shimla City, Himachal Pradesh, India. This is a city with an area of 27 sqkm and a population density of 7600 person per sqkm as per the 2011 Census. The city's draft Development Development plan is for the year 2041 and the expected population density is around 13000 person per sqkm.
 
 The city lies in the Himalayan ranges and it faces a lot of landslides during the monsoon season, on top of that the population of the city is increasing uncontrollably. Although the current Development Plan talks about how the area is prone to natural disasters, there is no inclusion of disaster risk zones in the Land Suitability. The Development Control Regulations (DCRs) are same throughout the city irrespective of the terrain, slope, topography, but they do have green belt zones and restricted areas. A City Disaster Management Plan (CDMP) was created for the year 2021-22, but this hasn't been implemented yet, despite the necessity. The development plan mentions how its important that disaster management is important, but there is no analysis regarding to disaster risk zones.
 
-<div style="text-align: center;">
-  <img src="Files/shimla_landslide.jpg" width="500px">
-</div>
-A landslide affected area where several buildings were damaged after heavy rains, at Krishna Nagar ward in Shimla. (The Telegraph Online)
-
+::: {style="text-align: center;"}
+<img src="Files/shimla_landslide.jpg" width="800px"/>
+:::
+*A landslide affected area where several buildings were damaged after heavy rains, at Krishna Nagar ward in Shimla. (The Telegraph Online)*
 
 The CDMP even mentions that there is a need of landslide micro-zonation of the city which will help to guide and regulate the growth of Shimla and also help in the disaster prepardeness, but as of now there is no updated landlside micro-zonation of the city.
 
 ## Application
 
-The city should prepare updated landslide micro-zonation maps using satellite data like DEM, rainfall data, lithology etc. This updated map will help the planners to regulate the growth. As of now there are many buildings in Shimla city which has higher FAR than the permissible FAR, this is not only illegal but is also dangerous as this can cause structural problems and can cause a chain effect during a landslide or earthquake. 
+The city should prepare updated landslide micro-zonation maps using satellite data like DEM, rainfall data, lithology etc. This updated map will help the planners to regulate the growth. As of now there are many buildings in Shimla city which has higher FAR than the permissible FAR, this is not only illegal but is also dangerous as this can cause structural problems and can cause a chain effect during a landslide or earthquake.
 
 The updated landslide micro-zonation map will not only help to prioritise regions which are falling under high risk, but it will also give the areas which are not under risk which is helpful as then the city can propose emergency disaster shelters in the areas with the lowest risk. This is essential as there are no planned/dedicated emergency shelters in the city.
 
@@ -23,20 +23,16 @@ Satellite Imagery can also be used to identify the natural drainage pattern of t
 
 ## Reflection
 
-Shimla City being a tourist city and famous for its high schools, the city is undergoing an uncontrolled increase of population. With this change and city being almost at its maximum capacity, the authorities should make sure that disaster management should be a top priority. They should make sure that they are prepared for these disasters and human lives and infrastructure are not lost. Remote Sensing can aid the planning and disaster management process. Rather than figuring out what to after a disaster, the use of technology can help to be prepared for this. This will also help in the urban planning of the city as implenting strict DCRs and planning laws will help the city to grow in a controlled manner. 
+Shimla City being a tourist city and famous for its high schools, the city is undergoing an uncontrolled increase of population. With this change and city being almost at its maximum capacity, the authorities should make sure that disaster management should be a top priority. They should make sure that they are prepared for these disasters and human lives and infrastructure are not lost. Remote Sensing can aid the planning and disaster management process. Rather than figuring out what to after a disaster, the use of technology can help to be prepared for this. This will also help in the urban planning of the city as implenting strict DCRs and planning laws will help the city to grow in a controlled manner.
 
 ## References
 
-1. Kumar, A. & Pushplata (2015) ‘City profile: Shimla’, Cities, 49, pp. 149–158. Available at: https://doi.org/10.1016/j.cities.2015.08.006
+1.  Kumar, A. & Pushplata (2015) ‘City profile: Shimla’, Cities, 49, pp. 149–158. Available at: https://doi.org/10.1016/j.cities.2015.08.006
 
-2. Kumar, A. (2016) ‘Impact of building regulations on Indian hill towns’, HBRC Journal, 12(3), pp. 316–326. Available at: https://doi.org/10.1016/j.hbrcj.2015.02.002
+2.  Kumar, A. (2016) ‘Impact of building regulations on Indian hill towns’, HBRC Journal, 12(3), pp. 316–326. Available at: https://doi.org/10.1016/j.hbrcj.2015.02.002
 
-3. Government of Himachal Pradesh (2020-21) City Disaster Management Plan Shimla. Shimla: Government of Himachal Pradesh.
+3.  Government of Himachal Pradesh (2020-21) City Disaster Management Plan Shimla. Shimla: Government of Himachal Pradesh.
 
-4. Town and Country Planning Department, Himachal Pradesh (2021) Draft Development Plan Shimla Planning Area 2041. Shimla: Government of Himachal Pradesh.
+4.  Town and Country Planning Department, Himachal Pradesh (2021) Draft Development Plan Shimla Planning Area 2041. Shimla: Government of Himachal Pradesh.
 
-5. District Disaster Management Authority, Shimla (2017) Shimla District Disaster Management Plan 2017. Shimla: Government of Himachal Pradesh.
-
-
-
-
+5.  District Disaster Management Authority, Shimla (2017) Shimla District Disaster Management Plan 2017. Shimla: Government of Himachal Pradesh.

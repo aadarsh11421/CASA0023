@@ -20,22 +20,18 @@ While raw satellite imagery requires corrections, data joining, and enhancements
 
 An example of preprocessing corrections applied to satellite imagery is in flood mapping using Sentinel-1 SAR data. Synthetic Aperture Radar (SAR) data undergoes multiple preprocessing steps, including applying orbit files, thermal noise removal, radiometric calibration, speckle noise reduction (despeckling), terrain correction, and conversion to dB values. For flood mapping, VH polarization is preferred over VV polarization as it provides better detection of water surfaces due to its reduced signal attenuation, enhanced backscatter, and improved sensitivity to water surface roughness. These preprocessing steps help create more accurate flood extent maps.
 
-<div style="text-align: center;">
-  <img src="Files/Before and After correction.png" width="500px">
-</div>
-Top - SAR Data before corrections, Bottom - SAR Data after corrections.
-
+::: {style="text-align: center;"}
+<img src="Files/Before and After correction.png" width="500px"/>
+:::
+*Top - SAR Data before corrections, Bottom - SAR Data after corrections.*
 
 ## Reflection
 
-This week's lecture highlighted the different types of corrections and processing which can be done to the satellite imagery. Although it majorly depends on the type of analysis which is being done, we should still be aware of these different types. Majority of the open data satellite imagery have ARD which is useful and can save a lot of time, one of the major websites which hosts these data is the Google Earth Engine Catalogue. I feel like mosaicking is one of the most important one for this lecture, as it is very unlikely that we will find the POI in just one satellite imagery, so multiple imageries must be used and joining them seamlessly is very important. In mosaicking, consistency between different images is crucial. I was surprised to that in majority of the corrections, regressions was used. 
+This week's lecture highlighted the different types of corrections and processing which can be done to the satellite imagery. Although it majorly depends on the type of analysis which is being done, we should still be aware of these different types. Majority of the open data satellite imagery have ARD which is useful and can save a lot of time, one of the major websites which hosts these data is the Google Earth Engine Catalogue. I feel like mosaicking is one of the most important one for this lecture, as it is very unlikely that we will find the POI in just one satellite imagery, so multiple imageries must be used and joining them seamlessly is very important. In mosaicking, consistency between different images is crucial. I was surprised to that in majority of the corrections, regressions was used.
 
 Lastly, I feel like even though we can automate all the corrections to the satellite imagery, manual tweaking is still needed for visual enhancements to improve the analysis and also get more accurate results.
 
 ## References
 
-- National Remote Sensing Centre (NRSC). (n.d.). Chapter 12: Flood Disaster Management. 
-Retrieved from https://www.nrsc.gov.in/sites/default/files/pdf/ebooks/Chap_12_FloodDisasterManagement_p1.pdf
-- Debraj Deka, 2023, Geospatial Analysis of Critical Infrastructure Resilience in Flood-Prone Areas: Case of Kamrup Region, Assam
-
-
+-   National Remote Sensing Centre (NRSC). (n.d.). Chapter 12: Flood Disaster Management. Retrieved from https://www.nrsc.gov.in/sites/default/files/pdf/ebooks/Chap_12_FloodDisasterManagement_p1.pdf
+-   Debraj Deka, 2023, Geospatial Analysis of Critical Infrastructure Resilience in Flood-Prone Areas: Case of Kamrup Region, Assam
