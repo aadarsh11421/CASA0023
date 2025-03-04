@@ -8,4 +8,3 @@ For week 2, we were asked to prepare a presentation on any satellite.
 xaringanExtra::embed_xaringan(url = "https://aadarsh11421.github.io/RS_Presentation/",ratio = "16:9")
 
 ```
-
