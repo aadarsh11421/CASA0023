@@ -2,7 +2,27 @@
 
 ## Summary
 
+The lecture was a continuation of the previous week's topic on imagery classification and assessing model accuracy. We examined various pre-classified datasets, including the European Space Agency’s (ESA) Climate Change Initiative (CCI) annual global land cover (300 m resolution) dataset (1992-2015), Dynamic World (near-real-time 10 m resolution), and Google building data. We discussed Dynamic World in detail; this AI-powered model uses Sentinel-2 imagery to classify land use and land cover (LULC) into nine distinct classes: water, trees, grass, crops, shrub, flooded vegetation, built-up areas, bare ground, and snow/ice. The classification process involves contributions from both expert and non-expert labeling, supported by sophisticated Convolutional Neural Networks (CNN). However, despite its advanced deep-learning framework, Dynamic World doesn't necessarily outperform specialized, locally prepared LULC maps. Nevertheless, it remains valuable for monitoring land-use changes at national or international scales due to its consistent global coverage.
+
+We also explored two additional image analysis techniques: Object-Based Image Analysis (OBIA) and Sub-Pixel Analysis. In OBIA, instead of classifying individual pixels, the analysis is conducted based on shapes or regions known as superpixels, identified by shape similarity or differences. Classification in OBIA can be guided by rules based on features such as distance, color, or texture. Sub-Pixel Analysis, in contrast, estimates the proportion of different land cover classes within individual pixels using spectral signatures of pure endmembers. For urban studies, the Vegetation-Impervious-Soil (VIS) model is often employed, as nearly all urban land covers can be represented through combinations of these three endmembers.
+
+The second half of the lecture addressed accuracy assessments of classification results, covering three primary accuracy measures:
+
+  1. Producer Accuracy (also known as recall) evaluates how well the model classification aligns with the expectations of those who created it.
+
+  2. User Accuracy (precision) measures how reliable the classification results are from the user’s perspective.
+
+  3. Overall Accuracy provides a general measure of classification performance.
+  
+In remote sensing, achieving both high recall and high precision simultaneously is extremely challenging, as perfect predictions of LULC are practically impossible. Key terms include True Positive (model correctly predicts positive class), True Negative (model correctly predicts negative class), False Positive (model incorrectly predicts positive when it should be negative), and False Negative (model incorrectly predicts negative when it should be positive). While multiple accuracy assessment methods exist, Overall Accuracy is often preferred since it incorporates True Negatives as well. Additionally, the Receiver Operating Characteristic (ROC) curve plots True Positive Rate (TP/TP+FN) against False Positive Rate (FP/FP+TN), where an ideal classifier has an area under the curve (AUC) of 1, and a random classifier has an AUC of approximately 0.5. To prevent overfitting, various sampling strategies such as random sampling, systematic sampling, and stratified sampling can be utilized.
+
 ## Applications
 
+
+
 ## Reflection
+
+This lecture was too much information heavy. There was so many topics covered and I feel like I might have to look more into OBIA and sub pixel image analysis. Also learning about accuracy assessments are important as it will validate the model. Although there are many assessment parameters, I feel like Overall Accuracy and AUC are the best methods to validate a model. And in case of spatial things as near things are more related to distant things, it is important to choose the train and test data in such a way that the test data doesn't overfit the train data. We can deal with this by different sampling techniques.  
+
+## References
 
