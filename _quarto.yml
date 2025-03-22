@@ -13,6 +13,8 @@ book:
     - 3_Corrections.qmd
     - 4_Policy.qmd
     - 6_GEE.qmd
+    - 7_Classification-I.qmd
+    - 9_SAR.qmd
 
 bibliography: references.bib
 

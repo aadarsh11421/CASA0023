@@ -1,0 +1,46 @@
+# Synthetic Aperture Radar (SAR) Data
+
+## Summary
+
+Optical remote sensing imagery has limitations such as its inability to capture clear data in the presence of clouds, dust storms, or atmospheric disturbances. This is where SAR comes in. SAR sensors have their own illumination source, meaning they don't need to rely on external illumination such as sunlight. SAR uses radar waves, which can pass through clouds and dust, making them very useful in such challenging conditions. SAR data works similarly to SONAR; the radar wave is sent from the satellite, and the reflected radar wave is observed by the sensor. This reflected radar wave is known as backscatter. Different surface textures interact differently with radar, enabling differentiation of built-up areas, land, water, etc. SAR data can even penetrate thin plastic canopies, which are often used in aircraft hangars. There are mainly three types of scattering we can observe:
+
+  
+  1. **Rough Scattering** – Also known as surface scattering. Examples of textures exhibiting this type of scattering include bare earth and wavy ocean surfaces. This scattering is sensitive to VV polarization.
+
+  2. **Volume Scattering** – This scattering is used to observe volumes, such as leaves and vegetation. It is sensitive to cross-polarizations (VH or HV).
+
+  3. **Double Bounce Scattering** – This scattering is observed when the radar wave bounces off structures like trees, buildings, or cliffs, reflecting back to the sensor. It is sensitive to HH polarization.
+
+Sentinel-1, the most commonly used SAR satellite, only has two polarizations: VV and VH. The penetration capability of radar also varies based on the wavelength of the radar wave. Sentinel-1 uses only the C-band. Some missiles also emit C-band wavelengths upon launch; thus, after missile launches, interference occurs with Sentinel-1 data, which also uses C-band radar waves. This principle is applied defensively to destroy missiles mid-air.
+
+<div style="text-align: center;">
+  <img src="Files/sar-wavelength.jpg" width="800px">
+</div>
+*Different levels of penetration of SAR at different wavelength*
+
+The phase information from SAR data can be used to detect minute changes in reflections. If there is a difference in phase observed over time, it can indicate a change in elevation in the area from which the radar wave reflected. The study of such phase differences is known as interferometry. **Radar data is particularly useful in change detection studies due to its consistency**.
+
+<div style="text-align: center;">
+  <img src="Files/sar-phase.png" width="600px">
+</div>
+*How phase difference is used in land deformation (Castellazzi, P. and Schmid, W., 2020)*
+
+## Applications
+
+SAR data is very useful in change detection and when there are challenging atmospheric conditions as optical imagery can't be used to collect data in that case. In disaster management, SAR data is utilized in flood mapping, as during floods there is a very high probability that it might have rained so to properly the water SAR data is used. We can map the before and after of the region which flooded and then if we find the difference between both the images, we can find the flooded areas. For floods VH polarization are considered better than VV because VV is sensitive to water surface roughness. This data is also used to detect land deformations during landslides, earthquakes, volcanic activity using phase change which is very important for disaster preparedness and risk management (Elliott et al., 2016)
+
+SAR data can also be used in change detection which is demonstrated by Ballinger (2024) to detect the damaged buildings in conflict zones like Ukraine and Gaza. Even though SAR data does not have a high resolution, by combining this with pixel wise T-test of Sentinel-1 data. Unlike the deep learning models which needs to be trained for the specific areas in order to get a better accuracy and is very expensive, this method is more accurate and reproducible as it uses open data. 
+
+## Reflection
+
+SAR data has so many applications, it is used in places and areas where I couldn't even imagine that SAR data can be used like change detection of damaged buildings and anti missile defence system. SAR data is so crucial where optical data can't be used. As demonstrated in Ballinger (2024), sometimes traditional methods like pixel wise T-test can be so much efficient and accurate than deep learning models which are so expensive to build. In the age of AI, where everyone is going for AI and Deep learning models, it is shown that through few statistical methods and open data like Sentinel-1 better results can be achieved. 
+
+## References
+
+1. https://earthdata.nasa.gov/learn/backgrounders/what-is-sar
+
+2. Castellazzi, P. and Schmid, W. (2020). Ground displacements in the Lower Namoi region. NSW DPIE: CSIRO.
+
+3. Elliott, J.R. et al. (2016). The role of space-based observation in understanding and responding to active tectonics and earthquakes. Nature Communications, 7, p.13844.
+
+4. Ballinger, O. (2024). Open Access Battle Damage Detection via Pixel-Wise T-Test on Sentinel-1 Imagery. arXiv preprint arXiv:2405.06323.
