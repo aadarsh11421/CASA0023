@@ -13,17 +13,13 @@ Optical remote sensing imagery has limitations such as its inability to capture 
 
 Sentinel-1, the most commonly used SAR satellite, only has two polarizations: VV and VH. The penetration capability of radar also varies based on the wavelength of the radar wave. Sentinel-1 uses only the C-band. Some missiles also emit C-band wavelengths upon launch; thus, after missile launches, interference occurs with Sentinel-1 data, which also uses C-band radar waves. This principle is applied defensively to destroy missiles mid-air.
 
-<div style="text-align: center;">
-  <img src="Files/sar-wavelength.jpg" width="800px">
-</div>
-*Different levels of penetration of SAR at different wavelength*
+![Different levels of penetration of SAR at different wavelength](Files/sar-wavelength.jpg)
+
 
 The phase information from SAR data can be used to detect minute changes in reflections. If there is a difference in phase observed over time, it can indicate a change in elevation in the area from which the radar wave reflected. The study of such phase differences is known as interferometry. **Radar data is particularly useful in change detection studies due to its consistency**.
 
-<div style="text-align: center;">
-  <img src="Files/sar-phase.png" width="600px">
-</div>
-*How phase difference is used in land deformation (Castellazzi, P. and Schmid, W., 2020)*
+![How phase difference is used in land deformation (Castellazzi, P. and Schmid, W., 2020)
+](Files/sar-phase.png)
 
 ## Applications
 

@@ -6,10 +6,9 @@ For the case study city I have chosen Shimla City, Himachal Pradesh, India. This
 
 The city lies in the Himalayan ranges and it faces a lot of landslides during the monsoon season, on top of that the population of the city is increasing uncontrollably. Although the current Development Plan talks about how the area is prone to natural disasters, there is no inclusion of disaster risk zones in the Land Suitability. The Development Control Regulations (DCRs) are same throughout the city irrespective of the terrain, slope, topography, but they do have green belt zones and restricted areas. A City Disaster Management Plan (CDMP) was created for the year 2021-22, but this hasn't been implemented yet, despite the necessity. The development plan mentions how its important that disaster management is important, but there is no analysis regarding to disaster risk zones.
 
-::: {style="text-align: center;"}
-<img src="Files/shimla_landslide.jpg" width="800px"/>
-:::
-*A landslide affected area where several buildings were damaged after heavy rains, at Krishna Nagar ward in Shimla. (The Telegraph Online)*
+![A landslide affected area where several buildings were damaged after heavy rains, at Krishna Nagar ward in Shimla. (The Telegraph Online)](Files/shimla_landslide.jpg)
+
+
 
 The CDMP even mentions that there is a need of landslide micro-zonation of the city which will help to guide and regulate the growth of Shimla and also help in the disaster prepardeness, but as of now there is no updated landlside micro-zonation of the city.
 

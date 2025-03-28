@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="CASA, University College London">
 
 <title>Learning Diary - 8&nbsp; Synthetic Aperture Radar (SAR) Data</title>
 <style>
@@ -203,15 +204,19 @@ ul.task-list li input[type="checkbox"] {
 <li><p><strong>Double Bounce Scattering</strong> – This scattering is observed when the radar wave bounces off structures like trees, buildings, or cliffs, reflecting back to the sensor. It is sensitive to HH polarization.</p></li>
 </ol>
 <p>Sentinel-1, the most commonly used SAR satellite, only has two polarizations: VV and VH. The penetration capability of radar also varies based on the wavelength of the radar wave. Sentinel-1 uses only the C-band. Some missiles also emit C-band wavelengths upon launch; thus, after missile launches, interference occurs with Sentinel-1 data, which also uses C-band radar waves. This principle is applied defensively to destroy missiles mid-air.</p>
-<div style="text-align: center;">
-<p><img src="Files/sar-wavelength.jpg" width="800px"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Files/sar-wavelength.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Different levels of penetration of SAR at different wavelength</figcaption>
+</figure>
 </div>
-<p><em>Different levels of penetration of SAR at different wavelength</em></p>
 <p>The phase information from SAR data can be used to detect minute changes in reflections. If there is a difference in phase observed over time, it can indicate a change in elevation in the area from which the radar wave reflected. The study of such phase differences is known as interferometry. <strong>Radar data is particularly useful in change detection studies due to its consistency</strong>.</p>
-<div style="text-align: center;">
-<p><img src="Files/sar-phase.png" width="600px"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Files/sar-phase.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">How phase difference is used in land deformation (Castellazzi, P. and Schmid, W., 2020)</figcaption>
+</figure>
 </div>
-<p><em>How phase difference is used in land deformation (Castellazzi, P. and Schmid, W., 2020)</em></p>
 </section>
 <section id="applications" class="level2" data-number="8.2">
 <h2 data-number="8.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">8.2</span> Applications</h2>

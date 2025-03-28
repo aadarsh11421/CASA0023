@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="CASA, University College London">
 
 <title>Learning Diary - 5&nbsp; Google Earth Engine - I</title>
 <style>
@@ -232,10 +233,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="summary" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">5.1</span> Summary</h2>
 <p>This week we started with Google Earth Engine (GEE). The main reason for learning GEE is its growing popularity in research and real-world applications, primarily due to its ease of use, access to massive datasets, and fast execution. GEE excels at parallelization, allowing efficient execution and analysis of large-scale geospatial tasks. To leverage GEE effectively, we need to use server-side coding, facilitated by specific Google classes such as ee, Map, Chart, and Export. A key consideration while coding in GEE is to avoid using loops. Additionally, <strong>GEE converts all spatial data to EPSG:3857</strong> (Web Mercator projection).</p>
-<div style="text-align: center;">
-<p><img src="Files/GEE.png" width="800px"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Files/GEE.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Google Earth Engine GUI</figcaption>
+</figure>
 </div>
-<p><em>Google Earth Engine GUI</em></p>
 <p>A few GEE-specific terminologies include: Rasters are referred to as Image, and vector datasets are called Features. The GEE interface is divided into four main sections.</p>
 <p>The bottom half displays the map, layers, and allows adding geometries. The top half is further divided into three panels:</p>
 <ul>

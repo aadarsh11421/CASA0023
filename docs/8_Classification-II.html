@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="CASA, University College London">
 
 <title>Learning Diary - 7&nbsp; Classification - II</title>
 <style>
@@ -170,7 +171,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">7.1</span> Summary</a></li>
   <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">7.2</span> Applications</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">7.3</span> Reflection</a></li>
+  <li><a href="#reflection-updated" id="toc-reflection-updated" class="nav-link" data-scroll-target="#reflection-updated"><span class="header-section-number">7.3</span> Reflection (Updated)</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">7.4</span> References</a></li>
   </ul>
 </nav>
@@ -197,7 +198,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="summary" class="level2" data-number="7.1">
 <h2 data-number="7.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">7.1</span> Summary</h2>
-<p>The lecture was a continuation of the previous week’s topic on imagery classification and assessing model accuracy. We examined various pre-classified datasets, including the European Space Agency’s (ESA) Climate Change Initiative (CCI) annual global land cover (300 m resolution) dataset (1992-2015), Dynamic World (near-real-time 10 m resolution), and Google building data. We discussed Dynamic World in detail; this AI-powered model uses Sentinel-2 imagery to classify land use and land cover (LULC) into nine distinct classes: water, trees, grass, crops, shrub, flooded vegetation, built-up areas, bare ground, and snow/ice. The classification process involves contributions from both expert and non-expert labeling, supported by sophisticated Convolutional Neural Networks (CNN). However, despite its advanced deep-learning framework, Dynamic World doesn’t necessarily outperform specialized, locally prepared LULC maps. Nevertheless, it remains valuable for monitoring land-use changes at national or international scales due to its consistent global coverage.</p>
+<p>The lecture was a continuation of the previous week’s topic on imagery classification and assessing model accuracy. We examined various pre-classified datasets, including the European Space Agency’s (ESA) Climate Change Initiative (CCI) annual global land cover (300 m resolution) dataset (1992-2015), Dynamic World (near-real-time 10 m resolution), and Google building data. We discussed Dynamic World in detail; this AI-powered model uses Sentinel-2 imagery to classify land use and land cover (LULC) into nine distinct classes: water, trees, grass, crops, shrub, flooded vegetation, built-up areas, bare ground, and snow/ice. The classification process involves contributions from both expert and non-expert labeling, supported by sophisticated Convolution Neural Networks (CNN). However, despite its advanced deep-learning framework, Dynamic World doesn’t necessarily outperform specialized, locally prepared LULC maps. Nevertheless, it remains valuable for monitoring land-use changes at national or international scales due to its consistent global coverage.</p>
 <p>We also explored two additional image analysis techniques: Object-Based Image Analysis (OBIA) and Sub-Pixel Analysis. In OBIA, instead of classifying individual pixels, the analysis is conducted based on shapes or regions known as superpixels, identified by shape similarity or differences. Classification in OBIA can be guided by rules based on features such as distance, color, or texture. Sub-Pixel Analysis, in contrast, estimates the proportion of different land cover classes within individual pixels using spectral signatures of pure endmembers. For urban studies, the Vegetation-Impervious-Soil (VIS) model is often employed, as nearly all urban land covers can be represented through combinations of these three endmembers.</p>
 <p>The second half of the lecture addressed accuracy assessments of classification results, covering three primary accuracy measures:</p>
 <ol type="1">
@@ -209,13 +210,21 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="applications" class="level2" data-number="7.2">
 <h2 data-number="7.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">7.2</span> Applications</h2>
+<p>In assessing landslide susceptibility using remote sensing and statistical models, data accuracy and validation strategies play a crucial role. For instance, Gu et al.&nbsp;(2021) used a Geographically Weighted Logistic Regression (GWLR) model to assess landslide susceptibility in Zhenxiong County, China. They have also used a traditional linear regression method to compare both methods. FOr both the methods they have done a 70-30 split between training and test sample points. The sample points contains both landslide points and non-landslide points. This is so that the model can not only predict the areas which can have landslides but can also predict areas which will not have landslides. This is important for landslide susceptibility because it is important for us to predict which places are safe so that these areas can act like shelters. Without non-landslide points, the model would only learn about the characteristics of landslide areas and would not be able to effectively predict where landslides will not occur.</p>
+<p>The GWLR model saw an AUC value of 0.904 and the linear regression model saw an AUC value of 0.894, which explains that the model behaves better when the goegraphic relationship between the parameteres are used. The AUC values gives us the overall performance of the model using the True Positive Rate (TPR) (Sensitivity) and False Positive Rate (FPR) (Specificity), a high AUC value tells us that the model can successfully predict and differentiate landslide and non landslide areas. This would not have been possible if non landslide points were not used.</p>
 </section>
-<section id="reflection" class="level2" data-number="7.3">
-<h2 data-number="7.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">7.3</span> Reflection</h2>
+<section id="reflection-updated" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="reflection-updated"><span class="header-section-number">7.3</span> Reflection (Updated)</h2>
 <p>This lecture was too much information heavy. There was so many topics covered and I feel like I might have to look more into OBIA and sub pixel image analysis. Also learning about accuracy assessments are important as it will validate the model. Although there are many assessment parameters, I feel like Overall Accuracy and AUC are the best methods to validate a model. And in case of spatial things as near things are more related to distant things, it is important to choose the train and test data in such a way that the test data doesn’t overfit the train data. We can deal with this by different sampling techniques.</p>
+<p>After looking at a few research papers, I have realized how important the data preparation part is. As done by Gu et al.&nbsp;(2021), using the non landslide points is also important so that the model can differentiate between areas, and if these points were not used then the model wouldn’t have been accurate for the low landslide susceptibility areas. Earlier I was under the impression that we only need to use the landslide points, as I have only worked on LULC models and these models usually cover all the regions of interest.</p>
+<p>In Ji et al.&nbsp;(2020), they have applied deep-learning-based approaches for landslide detection, specifically utilizing attention-boosted Convolutional Neural Networks (CNNs) on high-resolution optical imagery combined with Digital Elevation Models (DEMs). They have achieved a very high f1 score even after splitting the data into 2/3 and 1/3 for training and testing data respectively. It is very hard to get very high precision and accuracy, does that mean the model is overfitting or the sampling of the the dataset was not done properly?</p>
 </section>
 <section id="references" class="level2" data-number="7.4">
 <h2 data-number="7.4" class="anchored" data-anchor-id="references"><span class="header-section-number">7.4</span> References</h2>
+<ol type="1">
+<li><p>Gu, T., Li, J., Wang, M. and Duan, P. (2021). Landslide susceptibility assessment in Zhenxiong County of China based on geographically weighted logistic regression model. Geocarto International. Available at: https://doi.org/10.1080/10106049.2021.1903571</p></li>
+<li><p>Ji, S., Yu, D., Shen, C., Li, W. and Xu, Q. (2020). Landslide detection from an open satellite imagery and digital elevation model dataset using attention boosted convolutional neural networks. Landslides. Available at: https://doi.org/10.1007/s10346-020-01353-2</p></li>
+</ol>
 
 
 </section>

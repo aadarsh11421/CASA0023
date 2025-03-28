@@ -1,5 +1,15 @@
 # Welcome {.unnumbered}
 
-Hello, this is my learning diary for the Term 2 module Remotely Sensing Cities and Environments. This comprises of the weekly understanding of the classwork and materials.
+I am Aadarsh Ajikumar, currently pursuing an MSc in Urban Spatial Science at University College London (UCL). My academic background includes a Bachelor's degree in Physical Planning from the School of Planning and Architecture (SPA), New Delhi, India. With prior exposure to remote sensing applications during my undergraduate studies and internship at the Indian Space Research Organization (ISRO), I have worked with satellite imagery and spatial data processing. However, I recognize that there is still much to explore in this field.
 
-I did my Bachelors in Physical Planning from School of Planning and Architecture, Delhi, India. I have some experience in Remote Sensing, but from this module I would like to get to know the basics and the technicalities of Remote Sensing like corrections and learn Google Earth Engine (GEE).
+![Planners and Architects of SPA Delhi, 2020 Batch](Files/spa.jpg)
+
+Through this module, Remotely Sensing Cities and Environments, I aim to develop a strong foundational understanding of remote sensing principles, including image corrections, classifications, and preprocessing techniques. Additionally, I am eager to enhance my technical skills, particularly in using Google Earth Engine (GEE) for large-scale geospatial analysis. I believe that a deeper knowledge of remote sensing will significantly strengthen my ability to analyze urban dynamics and environmental change.
+
+Outside of my professional pursuits, I enjoy graphic designing, basketball, and cooking, and I was actively involved in student organizations, including NOSPlan and the Spatula - Food and Cooking Society at my undergraduate institution.
+
+![](Files/hb1.png)
+
+![](Files/hb2.png)
+
+This learning diary will serve as a reflective space where I document my weekly progress, key takeaways, and insights gained throughout the module. The summary part in each section is written in such a way that I can be easily access topics, keywords and revise them quickly. 

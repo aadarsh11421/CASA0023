@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="CASA, University College London">
 
 <title>Learning Diary - 6&nbsp; Classification - I</title>
 <style>
@@ -199,10 +200,12 @@ ul.task-list li input[type="checkbox"] {
 <h2 data-number="6.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">6.1</span> Summary</h2>
 <p>Firstly, based on my experience with different GIS software, there are primarily two common types of image classification: Unsupervised and Supervised. In unsupervised classification, clustering methods automatically group pixels with similar pixel values, without the need for initial human input. These clusters must then be manually labeled into classes such as built areas, water, forests, etc. Conversely, supervised classification relies on manually created training datasets, ideally randomly generated to prevent overfitting. Classes labeled in the training dataset are then applied to classify the entire image accordingly.</p>
 <p>Additionally, feature space can be utilized for image classification by plotting spectral signatures. By analyzing scatter plots, we can manually demarcate and classify images. However, understanding the spectral signatures associated with different classes is essential to perform this method effectively.</p>
-<div style="text-align: center;">
-<p><img src="Files/spectral-curves.png" width="400px"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Files/spectral-curves.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Spectral signature scatter plot (50northspatial)</figcaption>
+</figure>
 </div>
-<p><em>Spectral signature scatter plot (50northspatial)</em></p>
 <p>In class, we explored various classification methods, focusing particularly on classification trees and regression trees. Classification trees are used for discrete categories, while regression trees apply to continuous dependent variables. To effectively construct a regression tree, data is segmented into subsets for individual regression analyses. However, excessively dividing the data can lead to overfitting. Therefore, determining the optimal number of subsets involves calculating metrics such as the Gini impurity, which helps us to find the root of the tree. While manual selection of these splitting points using histograms is possible when clear distinctions exist, typically a more robust approach is to calculate the Sum of Squared Residuals (SSR) for potential split points, choosing the one with the lowest SSR. This iterative process continues for subsequent splits. To further mitigate overfitting, a minimum threshold for observations is recommended before splitting, aiming to achieve a balance of low bias and low variance.</p>
 <p>Support Vector Machine (SVM) are used to split the data into different sections and the divider is known as the seperating hyperplane, this method is used to get the best classification whilst allowing some wrongly classified points.</p>
 <p>One thing to notice is that as these classification methods get more sophisticated and accurate by using methods like Random Forest, SVM, Deep Neural Networks (DNN), the interpretability will decrease. This also means that it will be hard to debug these more sophisticated methods.</p>
@@ -210,13 +213,13 @@ ul.task-list li input[type="checkbox"] {
 <section id="applications" class="level2" data-number="6.2">
 <h2 data-number="6.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">6.2</span> Applications</h2>
 <p>In Urban Planning, supervised classification of imagery is very prominent for Land Utilization and Land Cover(LULC) mapping. LULC mapping is very essential when planning for the future. It also helps to monitor the difference between the Land Use which was given to certain areas and the existing Land Utilization. Another vital application of classification is to identify the extent of informal settlement areas. This is helpful so that they can find how many unplanned housing areas there are so that they can plan accordingly (provide new housing area, redevelopment of informal settlement etc.). Classification can also be used to monitor the growth of the city through decades, which will help the urban planners to find in which side or how the city is organically growing so that they can regulate it. If this is left unwatched then it can get difficult afterwards to provide services and facilities.</p>
-<div style="text-align: center;">
-<p><img src="Files/lulc1.png" width="600px"></p>
+<p><img src="Files/lulc1.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Files/lulc.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">LULC map of different time period showing Urban Growth (a-1985, b-1993, c-2000, d-2008, e-2013, f-2019, Amini et. al, 2022)</figcaption>
+</figure>
 </div>
-<div style="text-align: center;">
-<p><img src="Files/lulc.png" width="600px"></p>
-</div>
-<p><em>LULC map of different time period showing Urban Growth (a-1985, b-1993, c-2000, d-2008, e-2013, f-2019, Amini et. al, 2022)</em></p>
 <p>Classification is also important in climate and environmental planning, where areas of interests have to be monitored constantly and even small changes can be very critical, this can be land degradation, deforestation, glacier movement etc. Observing these climatic and environmental changes is a crucial part of sustainability and it affects all life on the planet, this helps to make global policies which can reduce the global warming effect.</p>
 <p>Now by using platforms like Google Earth Engine (GEE) people can automate these classification processes and monitor changes and get updated classifications as we get newer images from satellites.</p>
 </section>

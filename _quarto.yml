@@ -5,6 +5,7 @@ project:
 book:
   title: "Learning Diary"
   author: "Aadarsh Ajikumar"
+  description: "CASA, University College London"
   
   chapters:
     - index.qmd
