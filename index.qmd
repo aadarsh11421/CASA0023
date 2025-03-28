@@ -1,6 +1,6 @@
 # Welcome {.unnumbered}
 
-I am Aadarsh Ajikumar, currently pursuing an MSc in Urban Spatial Science at University College London (UCL). My academic background includes a Bachelor's degree in Physical Planning from the School of Planning and Architecture (SPA), New Delhi, India. With prior exposure to remote sensing applications during my undergraduate studies and internship at the Indian Space Research Organization (ISRO), I have worked with satellite imagery and spatial data processing. However, I recognize that there is still much to explore in this field.
+I am **Aadarsh Ajikumar**^[🐰 You discovered my hiding spot!], currently pursuing an MSc in Urban Spatial Science at University College London (UCL). My academic background includes a Bachelor's degree in Physical Planning from the [School of Planning and Architecture (SPA)](https://spa.ac.in/), New Delhi, India. With prior exposure to remote sensing applications during my undergraduate studies and internship at the Indian Space Research Organization (ISRO), I have worked with satellite imagery and spatial data processing. However, I recognize that there is still much to explore in this field.
 
 ![Planners and Architects of SPA Delhi, 2020 Batch](Files/spa.jpg)
 

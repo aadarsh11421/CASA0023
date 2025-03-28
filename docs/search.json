@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Learning Diary",
     "section": "",
-    "text": "Welcome\nI am Aadarsh Ajikumar, currently pursuing an MSc in Urban Spatial Science at University College London (UCL). My academic background includes a Bachelor’s degree in Physical Planning from the School of Planning and Architecture (SPA), New Delhi, India. With prior exposure to remote sensing applications during my undergraduate studies and internship at the Indian Space Research Organization (ISRO), I have worked with satellite imagery and spatial data processing. However, I recognize that there is still much to explore in this field.\n\n\n\nPlanners and Architects of SPA Delhi, 2020 Batch\n\n\nThrough this module, Remotely Sensing Cities and Environments, I aim to develop a strong foundational understanding of remote sensing principles, including image corrections, classifications, and preprocessing techniques. Additionally, I am eager to enhance my technical skills, particularly in using Google Earth Engine (GEE) for large-scale geospatial analysis. I believe that a deeper knowledge of remote sensing will significantly strengthen my ability to analyze urban dynamics and environmental change.\nOutside of my professional pursuits, I enjoy graphic designing, basketball, and cooking, and I was actively involved in student organizations, including NOSPlan and the Spatula - Food and Cooking Society at my undergraduate institution.\n\n\nThis learning diary will serve as a reflective space where I document my weekly progress, key takeaways, and insights gained throughout the module. The summary part in each section is written in such a way that I can be easily access topics, keywords and revise them quickly."
+    "text": "Welcome\nI am Aadarsh Ajikumar1, currently pursuing an MSc in Urban Spatial Science at University College London (UCL). My academic background includes a Bachelor’s degree in Physical Planning from the School of Planning and Architecture (SPA), New Delhi, India. With prior exposure to remote sensing applications during my undergraduate studies and internship at the Indian Space Research Organization (ISRO), I have worked with satellite imagery and spatial data processing. However, I recognize that there is still much to explore in this field.\nThrough this module, Remotely Sensing Cities and Environments, I aim to develop a strong foundational understanding of remote sensing principles, including image corrections, classifications, and preprocessing techniques. Additionally, I am eager to enhance my technical skills, particularly in using Google Earth Engine (GEE) for large-scale geospatial analysis. I believe that a deeper knowledge of remote sensing will significantly strengthen my ability to analyze urban dynamics and environmental change.\nOutside of my professional pursuits, I enjoy graphic designing, basketball, and cooking, and I was actively involved in student organizations, including NOSPlan and the Spatula - Food and Cooking Society at my undergraduate institution.\nThis learning diary will serve as a reflective space where I document my weekly progress, key takeaways, and insights gained throughout the module. The summary part in each section is written in such a way that I can be easily access topics, keywords and revise them quickly."
   },
   {
     "objectID": "1_RemoteSensingIntro.html#summary",
@@ -201,5 +201,12 @@
     "title": "8  Synthetic Aperture Radar (SAR) Data",
     "section": "8.4 References",
     "text": "8.4 References\n\nhttps://earthdata.nasa.gov/learn/backgrounders/what-is-sar\nCastellazzi, P. and Schmid, W. (2020). Ground displacements in the Lower Namoi region. NSW DPIE: CSIRO.\nElliott, J.R. et al. (2016). The role of space-based observation in understanding and responding to active tectonics and earthquakes. Nature Communications, 7, p.13844.\nBallinger, O. (2024). Open Access Battle Damage Detection via Pixel-Wise T-Test on Sentinel-1 Imagery. arXiv preprint arXiv:2405.06323."
+  },
+  {
+    "objectID": "index.html#footnotes",
+    "href": "index.html#footnotes",
+    "title": "Learning Diary",
+    "section": "",
+    "text": "🐰 You discovered my hiding spot!↩︎"
   }
 ]
